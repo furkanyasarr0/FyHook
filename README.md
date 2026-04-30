@@ -25,11 +25,6 @@ FyHook is a modern, sleek, and user-friendly desktop application developed to ma
 
 ---
 
-## 📸 Screenshots
-
-> *You can add images of the application interface here.*
-
----
 
 ## 🛠️ Installation
 
