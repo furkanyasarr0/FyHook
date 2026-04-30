@@ -5,7 +5,7 @@ import json
 from datetime import datetime, timezone
 
 ctk.set_appearance_mode("Dark")
-ctk.set_default_color_theme("blue")
+ctk.set_default_color_theme("blue") 
 
 class FyHookApp(ctk.CTk):
     def __init__(self):
