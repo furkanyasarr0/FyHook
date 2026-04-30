@@ -1,6 +1,6 @@
 # 🚀 FyHook - Discord Webhook Manager
 
-FyHook, Discord webhook'larını yönetmek, özelleştirilmiş embed mesajları göndermek ve mesajları anlık olarak önizlemek için geliştirilmiş modern, şık ve kullanıcı dostu bir masaüstü uygulamasıdır.
+FyHook is a modern, sleek, and user-friendly desktop application developed to manage Discord webhooks, send customized embed messages, and instantly preview messages.
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
 ![CustomTkinter](https://img.shields.io/badge/UI-CustomTkinter-blueviolet?style=for-the-badge)
@@ -8,52 +8,52 @@ FyHook, Discord webhook'larını yönetmek, özelleştirilmiş embed mesajları 
 
 ---
 
-## ✨ Özellikler
+## ✨ Features
 
-- **🖼️ Canlı Discord Önizlemesi**: Mesajınızın Discord'da tam olarak nasıl görüneceğini anlık olarak görün.
-- **🤖 Dinamik Bot Bilgisi**: Webhook URL'sini girdiğinizde botun ismi ve profil fotoğrafı otomatik olarak Discord'dan çekilir.
-- **📚 Webhook Yöneticisi**: Sık kullandığınız webhook'ları isim vererek kaydedin, silin ve tek tıkla kullanın.
-- **🎨 Gelişmiş Embed Editörü**: 
-  - Author (Yazar), Title (Başlık), Description (Açıklama)
-  - Fields (Alanlar) - Sınırsız alan ekleme desteği
-  - Images & Thumbnails (Resimler)
-  - Footer & Timestamp (Alt bilgi ve Zaman damgası)
-  - Renk Seçici (Hex kod desteği)
-- **⚡ JSON Düzenleyici**: Mesaj verilerini doğrudan JSON olarak düzenleyin veya dışarıdan içe aktarın.
-- **🔄 Güncelleme Denetleyicisi**: Yeni bir sürüm yayınlandığında uygulama içinden anında haberdar olun.
-- **🔗 Mesaj Yükleme**: Gönderilmiş bir mesajın linkini vererek o mesajı düzenlemek üzere geri yükleyin.
-
----
-
-## 📸 Ekran Görüntüleri
-
-> *Uygulama arayüzünden görselleri buraya ekleyebilirsiniz.*
+- **🖼️ Live Discord Preview**: See exactly how your message will appear on Discord in real-time.
+- **🤖 Dynamic Bot Information**: When you enter a webhook URL, the bot's name and profile picture are automatically fetched from Discord.
+- **📚 Webhook Manager**: Save, delete, and use your frequently used webhooks with a single click, giving them custom names.
+- **🎨 Advanced Embed Editor**:
+  - Author, Title, Description
+  - Fields - Support for unlimited fields
+  - Images & Thumbnails
+  - Footer & Timestamp
+  - Color Picker (Hex code support)
+- **⚡ JSON Editor**: Edit message data directly as JSON or import from an external source.
+- **🔄 Update Checker**: Get instant notifications within the application when a new version is released.
+- **🔗 Message Loader**: Provide a link to a sent message to load it back for editing.
 
 ---
 
-## 🛠️ Kurulum
+## 📸 Screenshots
 
-1. **Depoyu bilgisayarınıza indirin:**
+> *You can add images of the application interface here.*
+
+---
+
+## 🛠️ Installation
+
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/furkanyasarr0/FyHook.git
    cd FyHook
    ```
 
-2. **Gerekli kütüphaneleri yükleyin:**
+2. **Install required libraries:**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Uygulamayı çalıştırın:**
+3. **Run the application:**
    ```bash
    python main.py
    ```
 
 ---
 
-## 📦 EXE Haline Getirme
+## 📦 Convert to EXE
 
-Uygulamayı tek bir `.exe` dosyası yapmak isterseniz şu komutu kullanabilirsiniz:
+If you want to convert the application into a single `.exe` file, you can use the following command:
 
 ```bash
 pip install pyinstaller
@@ -62,26 +62,26 @@ pyinstaller --noconsole --onefile --add-data "webhooks.json;." main.py
 
 ---
 
-## 🤝 Katkıda Bulunma
+## 🤝 Contributing
 
-1. Bu depoyu fork'layın.
-2. Yeni bir özellik dalı (branch) oluşturun (`git checkout -b feature/yeniOzellik`).
-3. Değişikliklerinizi commit edin (`git commit -m 'Yeni özellik eklendi'`).
-4. Dalınıza push yapın (`git push origin feature/yeniOzellik`).
-5. Bir Pull Request açın.
-
----
-
-## 📄 Lisans
-
-Bu proje **MIT** lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakabilirsiniz.
+1. Fork this repository.
+2. Create a new feature branch (`git checkout -b feature/newFeature`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to your branch (`git push origin feature/newFeature`).
+5. Open a Pull Request.
 
 ---
 
-## 👤 Geliştirici
+## 📄 License
+
+This project is licensed under the **MIT** license. See the `LICENSE` file for more details.
+
+---
+
+## 👤 Developer
 
 **Furkan Yaşar**  
 - GitHub: [@furkanyasarr0](https://github.com/furkanyasarr0)
 
 ---
-*FyHook ile Discord sunucunuzu daha profesyonel yönetin!*
+*Manage your Discord server more professionally with FyHook!*
