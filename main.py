@@ -24,7 +24,7 @@ class FyHookApp(ctk.CTk):
         self.saved_webhooks = self.load_webhooks_from_file()
         
         self.configure(fg_color=self.bg_dark)
-        self.version = "1.0.0"
+        self.version = "1.1"
         self.github_repo = "furkanyasarr0/FyHook" # Değiştirmeyi unutmayın
         self.embeds_list = []
         self.is_json_mode = False
@@ -251,7 +251,7 @@ class FyHookApp(ctk.CTk):
         info_frame = ctk.CTkFrame(about, fg_color=self.bg_medium, corner_radius=10)
         info_frame.pack(fill="both", expand=True, padx=30, pady=20)
 
-        desc = "A modern Discord Webhook Manager\nbuilt with Python & CustomTkinter.\n\nDeveloped by FyHook Team"
+        desc = "A modern Discord Webhook Manager\n\nDeveloped by furkanyasarr0"
         ctk.CTkLabel(info_frame, text=desc, justify="center").pack(pady=20)
 
         status_frame = ctk.CTkFrame(info_frame, fg_color=self.bg_dark, height=50)
