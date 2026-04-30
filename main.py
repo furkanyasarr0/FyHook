@@ -263,21 +263,31 @@ class FyHookApp(ctk.CTk):
         def check_updates():
             try:
                 # GitHub API üzerinden son sürümü kontrol et
-                # Not: Gerçek repo isminizi self.github_repo'ya yazmalısınız
                 api_url = f"https://api.github.com/repos/{self.github_repo}/releases/latest"
+                print(f"DEBUG: Checking updates at {api_url}")
                 res = requests.get(api_url, timeout=5)
+                
                 if res.status_code == 200:
-                    latest_version = res.json()["tag_name"].replace("v", "")
-                    if latest_version > self.version:
-                        self.update_status.configure(text=f"New version available: v{latest_version}", text_color=self.accent_blurple)
-                        ctk.CTkButton(info_frame, text="Download Update", fg_color=self.accent_blurple, 
-                                     command=lambda: import_webbrowser().open(res.json()["html_url"])).pack(pady=10)
-                    else:
-                        self.update_status.configure(text="You are using the latest version", text_color="#43B581")
+                    data = res.json()
+                    latest_version = data["tag_name"].replace("v", "")
+                    print(f"DEBUG: Current: {self.version}, Latest: {latest_version}")
+                    
+                    def update_ui():
+                        if latest_version > self.version:
+                            self.update_status.configure(text=f"New version available: v{latest_version}", text_color=self.accent_blurple)
+                            download_btn = ctk.CTkButton(info_frame, text="Download Update", fg_color=self.accent_blurple, 
+                                         command=lambda: import_webbrowser().open(data["html_url"]))
+                            download_btn.pack(pady=10)
+                        else:
+                            self.update_status.configure(text="You are using the latest version", text_color="#43B581")
+                    self.after(0, update_ui)
+                elif res.status_code == 404:
+                    self.after(0, lambda: self.update_status.configure(text="No releases found on GitHub", text_color="#ED4245"))
                 else:
-                    self.update_status.configure(text="Could not check updates", text_color="#ED4245")
-            except:
-                self.update_status.configure(text="Update check failed", text_color="#ED4245")
+                    self.after(0, lambda: self.update_status.configure(text=f"Update check error: {res.status_code}", text_color="#ED4245"))
+            except Exception as e:
+                print(f"DEBUG: Update Error: {e}")
+                self.after(0, lambda: self.update_status.configure(text="Connection failed", text_color="#ED4245"))
 
         def import_webbrowser():
             import webbrowser
@@ -305,6 +315,9 @@ class FyHookApp(ctk.CTk):
         url_entry.pack(fill="x", padx=15, pady=5)
 
         def add_webhook():
+            if len(self.saved_webhooks) >= 2:
+                self.update_status.configure(text="Limit reached (Max 2 for Free version)", text_color="#ED4245")
+                return
             name = name_entry.get().strip()
             url = url_entry.get().strip()
             if name and url:
