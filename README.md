@@ -24,6 +24,29 @@ FyHook is a modern, sleek, and user-friendly desktop application developed to ma
 - **🔗 Message Loader**: Provide a link to a sent message to load it back for editing.
 
 ---
+## 📸 Screenshots
+
+### Visual Editor
+<img width="1208" height="852" alt="Visual Editor" src="https://github.com/user-attachments/assets/54bf3328-f67e-4e8c-923f-1bc04bdef8d1" />
+
+<img width="1338" height="736" alt="Visual Editor Preview" src="https://github.com/user-attachments/assets/adf01820-0552-44b6-aba1-133c333c6360" />
+
+### JSON Data Editor
+Import or export using the JSON editor
+
+<img width="1208" height="852" alt="JSON Data Editor" src="https://github.com/user-attachments/assets/cab6ab97-b0f1-46bc-90d8-0815dbb5477e" />
+
+### Webhooks
+Effortlessly manage your webhooks with JSON-based local storage, eliminating the need to re-enter URLs every time
+
+<img width="602" height="532" alt="Webhooks" src="https://github.com/user-attachments/assets/bc1f7660-887e-478c-8cec-7676a9355ea1" />
+
+### About and Check for Updates
+Stay up to date with new features and bug fixes
+
+<img width="452" height="432" alt="main_IXtZIhMCge" src="https://github.com/user-attachments/assets/55207724-386a-40d5-b0a8-761fcc0940dd" />
+
+---
 
 
 ## 🛠️ Installation
