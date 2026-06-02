@@ -8,6 +8,11 @@ FyHook is a modern, sleek, and user-friendly desktop application developed to ma
 
 ---
 
+# ⌛ Changelog
+
+- **🖼️ Theme and GUI Update.**
+- **☀️ Light mode added.**
+
 ## ✨ Features
 
 - **🖼️ Live Discord Preview**: See exactly how your message will appear on Discord in real-time.
