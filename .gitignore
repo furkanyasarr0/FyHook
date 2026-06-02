@@ -9,9 +9,11 @@ venv/
 build/
 dist/
 *.spec
+*.exe
 
 # Local config
 webhooks.json
+*.json
 
 # IDEs
 .vscode/
